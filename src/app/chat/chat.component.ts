@@ -14,6 +14,9 @@ export class ChatComponent implements OnInit {
   selectedUsernumber: number;
 
 
+
+
+
   constructor(private service: SlackService) { }
 
   ngOnInit() {

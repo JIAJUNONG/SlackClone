@@ -80,4 +80,6 @@ export class SlackService {
   updateSelectedUser(idx: number) {
 ​     this.selectedUser.next(idx);
   }
+
+
 }
