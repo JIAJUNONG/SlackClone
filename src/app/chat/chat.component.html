@@ -1,0 +1,16 @@
+<div id="chatroom" *ngFor="let user of users; let i = index" >
+    <div class="left" (click)="onClickSelectUsers(i)">
+        {{user.name}}
+    </div>
+    <div class="right">
+        <div class="messages">
+            {{user.chat[i].sender}}:
+            {{user.chat[i].text}} 
+        </div>
+        <div class="form">
+            <!-- <input type="text" [formControl]="usersForm" /> -->
+            <!-- <button (click)="saveListName()">Confirm</button> -->
+
+        </div>
+    </div>
+  </div>  
